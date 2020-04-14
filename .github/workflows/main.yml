@@ -10,6 +10,6 @@ jobs:
     - uses: jamsajones/external-comments-labeler@master
       with: 
         label: "Answer Please"
-        orgs: ""
+        orgs: "sportsApp"
         teams: ""
         githubToken: ${{ secrets.GITHUB_TOKEN }}
