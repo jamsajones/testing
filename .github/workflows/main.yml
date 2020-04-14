@@ -1,0 +1,15 @@
+on:
+  issue_comment:
+    types: [created, edited]
+
+jobs:
+  
+  add_comment_job:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: jamsajones/external-comments-labeler@v1
+      with: 
+        label: "Answer Please"
+        orgs: ""
+        teams: ""
+        githubToken: ${{ secrets.GITHUB_TOKEN }}
