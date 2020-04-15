@@ -11,5 +11,4 @@ jobs:
       with: 
         label: "Answer Please"
         orgs: "sportsApp"
-        teams: ""
         githubToken: "${{ secrets.GITHUB_TOKEN }}"
